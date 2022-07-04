@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.8.8/semantic.min.css"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"
+      integrity="sha512-xIPqqrfvUAc/Cspuj7Bq0UtHNo/5qkdyngx6Vwt+tmbvTLDszzXM0G6c91LXmGrRx8KEPulT+AfOOez+TeVylg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.8.8/semantic.min.js"></script>
+  </head>
+
+  <body>
+    <div id="app">
+      <div class="ui container">
+        <h2 class="ui center aligned icon header">
+          <i class="github alternate icon"></i>
+          TASK LIST
+        </h2>
+      </div>
+      <div class="ui container center aligned">
+        <div class="ui icon input">
+          <input type="text" id="texto" placeholder="Search..." />
+          <i class="inverted circular search link icon"></i>
+        </div>
+      </div>
+      <div
+        style="margin-top: 2rem;"
+        class="ui container center aligned three stackable cards"
+        id="container"
+      ></div>
+    </div>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
